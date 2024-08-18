@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <%- include("header.ejs") %>
+</head>
+<body>
+    <ul>
+        <% for(let i=0;i<name.length;i++){ %> <%# name is our key value to ejs %>
+
+            <li>
+                <h1> hi! to <%= name[i] %> </h1> <%# upto every `i` iteration of i it will applied on it %>
+                <!-- you can simply assign a default value to your name key-->
+            </li>
+       <% } %>
+    </ul>
+    <br>
+    <%- "<em>hello to the world </em>" %>
+    <br>
+    <%- "<strong>hey how are you</strong>" %>
+    <br>
+    <%% hola %%>
+
+
+    <br>
+    <br>
+    <br>
+    <%- include("footer.ejs") %>
+    </body>
+
+</html>
